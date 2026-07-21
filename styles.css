@@ -1,8 +1,11 @@
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 100 900; font-display: swap; src: url("assets/Inter-Variable.woff2") format("woff2"); }
+
 :root {
   color: #000;
   background: #fcfcfc;
   font-family: Inter, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 300;
+  font-synthesis: none;
 }
 
 * { box-sizing: border-box; }
@@ -17,20 +20,21 @@ a { color: inherit; }
 }
 
 .nav { display: flex; width: 666px; max-width: 100%; margin: 0 auto; align-items: center; justify-content: space-between; }
-.nav-links { display: flex; width: 248px; gap: 32px; font-size: 16px; font-weight: 500; }
+.nav-links { display: flex; width: 248px; gap: 32px; font-size: 16px; font-weight: 400; }
 .nav a { text-decoration: none; }
 .nav a:hover, .intro a:hover { opacity: .63; }
 .social-links { display: flex; align-items: center; justify-content: center; width: 96px; height: 31px; gap: 4.481px; }
 .social-links a { position: relative; display: grid; flex: 0 0 32px; width: 32px; height: 32px; place-items: center; }
 .social-links .email-link { flex-basis: 28.331px; width: 28.331px; height: 28.331px; }
 .email-link img { display: block; width: 24.79px; height: 19.89px; }
-.github-mark { display: block; width: 28px; height: 26px; background: #646464; -webkit-mask-image: url("assets/github-mask.png"); -webkit-mask-position: .279px .5px; -webkit-mask-repeat: no-repeat; -webkit-mask-size: 25.39px 25.39px; mask-image: url("assets/github-mask.png"); mask-position: .279px .5px; mask-repeat: no-repeat; mask-size: 25.39px 25.39px; }
+.github-link img { display: block; width: 25.39px; height: 25.39px; opacity: .61; object-fit: contain; }
 .linkedin-link img { display: block; width: 32px; height: 32px; }
 
 .hero { width: 652px; max-width: 100%; margin: 129px auto 0; }
 .identity { display: flex; align-items: flex-start; height: 44px; }
 .profile { width: 41px; height: 41px; border-radius: 50%; object-fit: cover; flex: 0 0 auto; }
-.identity p { display: flex; flex-direction: column; justify-content: center; gap: 2px; height: 38px; margin: 0; padding-left: 10px; font-size: 16px; font-weight: 500; line-height: 20px; }
+.identity p { display: flex; flex-direction: column; justify-content: center; gap: 2px; height: 38px; margin: 0; padding-left: 10px; font-size: 16px; font-weight: 400; line-height: 20px; }
+.identity p strong { font-weight: 500; }
 .muted, .intro, .project-copy span { color: #646464; }
 .intro { margin-top: 16px; max-width: 647px; font-size: 16px; line-height: 24px; }
 .intro p { margin: 0 0 24px; }
@@ -43,22 +47,22 @@ a { color: inherit; }
 .featured-card { display: flex; height: 466px; padding: 12px 11px 8px 12px; flex-direction: column; border: 1px solid rgba(1, 1, 1, .06); border-radius: 20px; background: #fff; box-shadow: 0 4px 2px rgba(0, 0, 0, .25); text-decoration: none; transition: transform 160ms ease, box-shadow 160ms ease; }
 .featured-card:hover { transform: translateY(-2px); box-shadow: 0 7px 13px rgba(0, 0, 0, .16); }
 .featured-header { display: flex; width: 651px; max-width: 100%; height: 16px; align-items: flex-start; justify-content: space-between; color: #646464; font-size: 12px; line-height: 24px; }
-.featured-header strong { font-weight: 500; }
+.featured-header strong { font-weight: 400; }
 .featured-header img { width: 9.429px; height: 9.02px; margin: 3px 4px 0 0; transform: rotate(-45deg); }
 .featured-image { display: block; width: 658px; max-width: 100%; height: 413.014px; margin-top: 15px; border-radius: 14px; object-fit: cover; object-position: bottom; }
 .featured-description { width: 662px; max-width: 100%; min-height: 50px; margin: 31px 0 0; color: #646464; font-size: 16px; line-height: 24px; }
 .featured-description a { text-underline-offset: 2px; }
 .additional-projects { display: flex; margin-top: 87px; flex-direction: column; gap: 20px; }
-.additional-projects h3 { margin: 0; color: #000; font-size: 16px; font-weight: 500; line-height: 24px; }
+.additional-projects h3 { margin: 0; color: #000; font-size: 16px; font-weight: 400; line-height: 24px; }
 .additional-project { display: flex; align-items: center; gap: 8px; color: #646464; text-decoration: none; }
 .additional-project:hover { opacity: .63; }
 .additional-project > img { width: 44px; height: 44px; object-fit: contain; opacity: .61; }
 .additional-project > span { display: flex; min-height: 49px; flex-direction: column; justify-content: center; font-size: 16px; line-height: 20px; }
-.additional-project strong { font-weight: 500; }
-.additional-projects h2 { margin: 0; color: #000; font-size: 16px; font-weight: 500; line-height: 24px; }
+.additional-project strong { font-weight: 400; }
+.additional-projects h2 { margin: 0; color: #000; font-size: 16px; font-weight: 400; line-height: 24px; }
 
 .home-projects { width: 652px; max-width: 100%; margin: 129px auto 0; padding: 10px 0; }
-.home-projects h2 { margin: 0 0 16px; font-size: 16px; font-weight: 500; line-height: 19px; }
+.home-projects h2 { margin: 0 0 16px; font-size: 16px; font-weight: 400; line-height: 19px; }
 .home-project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 .home-project-card { display: block; position: relative; height: 241px; border: 1px solid rgba(1, 1, 1, .06); border-radius: 20px; background: #fcfcfc; text-decoration: none; transition: transform 160ms ease, box-shadow 160ms ease; }
 .home-project-card:hover { transform: translateY(-2px); box-shadow: 0 9px 21px rgba(0, 0, 0, .05); }
@@ -71,7 +75,8 @@ a { color: inherit; }
 .home-networkiq-viewport { position: relative; display: block; width: 54px; height: 53px; overflow: hidden; }
 .home-networkiq-viewport img { position: absolute; top: -129.87%; left: -171.2%; width: 304.28%; height: 351.85%; max-width: none; }
 .home-project-copy { position: absolute; top: 175px; left: 26px; display: flex; width: 265px; flex-direction: column; font-size: 16px; line-height: 20px; }
-.home-project-copy strong { font-weight: 500; }
+.home-project-copy strong { font-weight: 400; }
+.home-project-copy > span { color: #646464; }
 
 @media (max-width: 520px) {
   .page { width: min(100% - 32px, 682px); padding-top: 18px; }
