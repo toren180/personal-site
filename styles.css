@@ -20,11 +20,11 @@ a { color: inherit; }
 .nav-links { display: flex; width: 248px; gap: 32px; font-size: 16px; font-weight: 500; }
 .nav a { text-decoration: none; }
 .nav a:hover, .intro a:hover { opacity: .63; }
-.social-links { display: flex; align-items: center; justify-content: center; width: 144px; height: 31px; gap: 4.481px; }
+.social-links { display: flex; align-items: center; justify-content: center; width: 96px; height: 31px; gap: 4.481px; }
 .social-links a { position: relative; display: grid; flex: 0 0 32px; width: 32px; height: 32px; place-items: center; }
 .social-links .email-link { flex-basis: 28.331px; width: 28.331px; height: 28.331px; }
 .email-link img { display: block; width: 24.79px; height: 19.89px; }
-.github-link img { display: block; width: 26px; height: 26px; opacity: .61; object-fit: contain; }
+.github-mark { display: block; width: 28px; height: 26px; background: #646464; -webkit-mask-image: url("assets/github-mask.png"); -webkit-mask-position: .279px .5px; -webkit-mask-repeat: no-repeat; -webkit-mask-size: 25.39px 25.39px; mask-image: url("assets/github-mask.png"); mask-position: .279px .5px; mask-repeat: no-repeat; mask-size: 25.39px 25.39px; }
 .linkedin-link img { display: block; width: 32px; height: 32px; }
 
 .hero { width: 652px; max-width: 100%; margin: 129px auto 0; }
@@ -42,7 +42,7 @@ a { color: inherit; }
 .featured-project + .featured-project { margin-top: 87px; }
 .featured-card { display: flex; height: 466px; padding: 12px 11px 8px 12px; flex-direction: column; border: 1px solid rgba(1, 1, 1, .06); border-radius: 20px; background: #fff; box-shadow: 0 4px 2px rgba(0, 0, 0, .25); text-decoration: none; transition: transform 160ms ease, box-shadow 160ms ease; }
 .featured-card:hover { transform: translateY(-2px); box-shadow: 0 7px 13px rgba(0, 0, 0, .16); }
-.featured-header { display: flex; width: 100%; height: 16px; align-items: flex-start; justify-content: space-between; color: #646464; font-size: 12px; line-height: 16px; }
+.featured-header { display: flex; width: 651px; max-width: 100%; height: 16px; align-items: flex-start; justify-content: space-between; color: #646464; font-size: 12px; line-height: 24px; }
 .featured-header strong { font-weight: 500; }
 .featured-header img { width: 9.429px; height: 9.02px; margin: 3px 4px 0 0; transform: rotate(-45deg); }
 .featured-image { display: block; width: 658px; max-width: 100%; height: 413.014px; margin-top: 15px; border-radius: 14px; object-fit: cover; object-position: bottom; }
